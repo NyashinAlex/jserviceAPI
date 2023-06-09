@@ -47,7 +47,6 @@ public class CluesTests extends BaseTest{
                     .spec(responseSpec)
                     .extract().jsonPath();
 
-
             step("Проверить, что ответ пустой", () -> {
                 assertThat(answer.getList("").size(), equalTo(0));
             });
