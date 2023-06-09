@@ -49,7 +49,6 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:5.8.2",
             "org.seleniumhq.selenium:selenium-java:4.6.0",
             'org.projectlombok:lombok:1.18.24',
-            'io.qameta.allure:allure-rest-assured:2.20.1',
             'io.github.bonigarcia:webdrivermanager:5.3.1')
 }
 
