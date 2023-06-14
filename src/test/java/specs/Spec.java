@@ -21,4 +21,10 @@ public class Spec {
             .expectStatusCode(200)
             .expectContentType(JSON)
             .build();
+
+    public static ResponseSpecification responseError500Spec = new ResponseSpecBuilder()
+            .log(BODY)
+            .expectStatusCode(500)
+            .expectContentType(JSON)
+            .build();
 }

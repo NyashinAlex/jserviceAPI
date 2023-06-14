@@ -1,13 +1,19 @@
 package test;
 
-import org.junit.jupiter.api.BeforeAll;
+import com.github.javafaker.Faker;
+import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTest {
 
-    static int value;
+    Faker faker = new Faker();
 
-    @BeforeAll
-    static void dataForTests() {
+    int value, category;
+    String categoryString;
+
+    @BeforeEach
+    void dataForTests() {
         value = 400;
+        category = faker.number().numberBetween(1,5000);
+        categoryString = faker.internet().emailAddress();
     }
 }
